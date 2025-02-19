@@ -4,18 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/icon-sales.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <title>Dashboard</title>
 </head>
 <body>
-    <main class="main">
-        <header class="header"></header>
-        <aside class="sidenav">
+    <main class="main grid grid-template">
+        <header class="header flex between align-items">
+            <div class="flex align-items header-gap">
+                <img src="./images/icon-menu.png" alt="" width="22" height="25">
+                <div class="header-search flex align-items">
+                    <img src="./images/icon-search.png" alt="" width="22" height="25">
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="flex align-items header-gap">
+                <img src="./images/icon-notification.png" alt="" width="29" height="30.5">
+                <img src="./images/icon-flag.png" alt="" width="40" height="27">
+                <select class="header-font-size header-color" name="language" id="language">
+                    <option value="eg">English</option>
+                    <option value="pt">Português</option>
+                </select>
+                <div class="flex align-items header-gap header-color">
+                    <img class="header-perfil" src="./images/perfil.jpg" alt="" width="50" height="52">
+                    <div>
+                        <p class="bold header-font-size">Monkey D. Luffy</p>
+                        <p>Admin</p>      
+                    </div>
+                </div>
+                <img src="./images/more.png" alt="" width="18" height="18">
+            </div>
+        </header>
+        <aside class="sidenav grid">
             <img src="./images/Logo.png" alt="Logo">
+            <ul class="sidenav-block">
+                <li class="sidenav-item gap-item flex">
+                    <img src="./images/icon-clock.png" alt="" width="22" height="25">
+                    <p>Dashboard</p>
+                </li>
+                <li class="sidenav-item gap-item flex">
+                    <img src="./images/icon-product.png" alt="" width="22" height="25">
+                    <p>Products</p>
+                </li>
+                <li class="sidenav-item gap-item flex">
+                    <img src="./images/icon-fav.png" alt="" width="22" height="25">
+                    <p>Favorites</p>
+                </li>
+                <li class="sidenav-item gap-item flex">
+                    <img src="./images/icon-inbox.png" alt="" width="22" height="25">
+                    <p>Inbox</p>
+                </li>
+                <li class="sidenav-item gap-item flex">
+                    <img src="./images/icon-list.png" alt="" width="22" height="25">
+                    <p>Order Lists</p>
+                </li>
+                <li class="sidenav-item gap-item flex">
+                    <img src="./images/icon-product-stock.png" alt="" width="22" height="25">
+                    <p>Product Stock</p>
+                </li>                
+            </ul>
+
+            <ul class="sidenav-block">
+                <p>Pages</p>
+                <li class="sidenav-item gap-item flex">
+                    <img src="./images/icon-pricing.png" alt="" width="22" height="25">
+                    <p>Pricing</p>
+                </li> 
+                <li class="sidenav-item gap-item flex">
+                    <img src="./images/icon-calender.png" alt="" width="22" height="25">
+                    <p>Calender</p>
+                </li> 
+                <li class="sidenav-item gap-item flex">
+                    <img src="./images/icon-to-do.png" alt="" width="22" height="25">
+                    <p>To-Do</p>
+                </li> 
+                <li class="sidenav-item gap-item flex">
+                    <img src="./images/icon-contact.png" alt="" width="22" height="25">
+                    <p>Contact</p>
+                </li> 
+                <li class="sidenav-item gap-item flex">
+                    <img src="./images/icon-invoice.png" alt="" width="22" height="25">
+                    <p>Invoice</p>
+                </li> 
+                <li class="sidenav-item gap-item flex">
+                    <img src="./images/icon-elements.png" alt="" width="22" height="25">
+                    <p>UI Elements</p>
+                </li> 
+                <li class="sidenav-item gap-item flex">
+                    <img src="./images/icon-team.png" alt="" width="22" height="25">
+                    <p>Team</p>
+                </li> 
+                <li class="sidenav-item gap-item flex">
+                    <img src="./images/icon-table.png" alt="" width="22" height="25">
+                    <p>Table</p>
+                </li> 
+            </ul>
+            <ul class="sidenav-block">
+                <li class="sidenav-item gap-item flex">
+                    <img src="./images/icon-setting.png" alt="" width="22" height="25">
+                    <p>Settings</p>
+                </li>
+                <li class="sidenav-item gap-item flex">
+                    <img src="./images/icon-logout.png" alt="" width="22" height="25">
+                    <p>Logout</p>
+                </li>
+            </ul>
         </aside>
         <div class="content">
-            <section class="section"></section>
-            <section class="section"></section>
-            <section class="section"></section>
+            <section class="section">40</section>
+            <section class="section">102</section>
+            <section class="section">89</section>
         </div>
 
 

@@ -1,5 +1,125 @@
 * {
     box-sizing: border-box;
+    font-size: 62.5%;
     margin: 0;
     padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+:root {
+    --primary-dark-gray: rgba(32,34,36,100%);
+    --primary-light-bllue: rgba(72,128,255,100%);
+    --primary-black: rgba(0, 0, 0, 0.877);
+
+    --secondary-bg: rgba(254, 254, 254, 100%);
+    --secondary-light-bg: rgba(221, 225, 245, 0.349);
+    --secondary-light-gray: rgb(80, 79, 79);
+    --secondary-very-expensive-gray: rgba(32, 34, 36, 0.281);
+
+    --font-family-default: "Nunito Sans", serif;
+    --font-size-default: 16rem;
+}
+
+body {
+    background-color: var(--secondary-bg);
+    font-family: var(--font-family-default);
+    font-size: var(--font-size-default);
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-template {
+    grid-template: 
+    'sidenav-dash header-dash' 70px
+    'sidenav-dash content-dash' 800px
+    / 240px 1fr;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.header {    
+    grid-area: header-dash;
+    padding: 1.6rem 3rem;
+}
+
+.header-gap {
+    gap: 2.5rem;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.header-font-size {
+    font-size: 1.4rem;
+}
+
+.header-color {
+    color: var(--secondary-light-gray);
+}
+
+.header-search {
+    background-color: var(--secondary-light-bg);
+    border: solid 1px var(--secondary-very-expensive-gray);
+    border-radius: 1.8rem;
+    height: 3.8rem;
+    padding: 1rem 1.6rem;
+    width: 38.8rem;
+}
+
+.header-search input {
+    border: none;
+    background-color: transparent;
+    margin-left: 1rem;
+    outline: none;
+}
+
+.header select {
+    background-color: transparent;
+    border: none;    
+    width: 8rem;
+}
+
+.header-perfil {
+    border-radius: 50%;
+    height: 4.4rem;
+    width: 4.4rem;
+}
+
+.sidenav {
+    margin: 2.4rem;
+    grid-area: sidenav-dash;
+}
+
+.gap-item {
+    gap: 1.6rem;
+}
+
+.sidenav-item {
+    margin: 1.6rem 5.6rem;
+}
+
+
+
+.content {
+    grid-area: content-dash;
 }
