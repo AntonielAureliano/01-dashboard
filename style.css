@@ -17,12 +17,14 @@ li {
     --primary-dark-gray: rgba(32,34,36,100%);
     --primary-light-bllue: rgba(72,128,255,100%);
     --primary-black: rgba(0, 0, 0, 0.877);
+    --primary-green: rgba(0, 182, 155, 1);
+    --primary-red: rgba(249, 60, 101, 1);
 
     --secondary-bg: rgba(254, 254, 254, 100%);
     --secondary-light-bg: rgba(221, 225, 245, 0.349);
     --secondary-light-gray: rgba(32, 34, 36, 0.281);
     --secondary-very-expensive-gray: rgba(32, 34, 36, 0.575);
-
+    --secondary-white: white;
     --font-family-default: "Nunito Sans", serif;
     --font-size-default: 16rem;
 }
@@ -159,8 +161,10 @@ body {
     margin: 1.6rem 5.6rem;
 }
 
-.content {
+.dash {
+    background-color: var(--secondary-light-bg);
     grid-area: content-dash;
+    margin: 3rem 0 0 3rem;
 }
 
 .dash-font-size {
@@ -175,6 +179,34 @@ body {
     padding: 1.6rem;
 }
 
-.dash-gap {
+.dash ul li {
+    background-color: var(--secondary-white);
+}
+
+.dash-box-shadow {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dash-border-radius {
+    border-radius: 1.4rem;
+}
+
+.dash-span-color-1 {
+    color: var(--primary-green)
+}
+
+.dash-span-color-2 {
+    color: var(--primary-red);
+}
+
+.dash-gap-1 {
     gap: 3rem;
+}
+
+.dash-gap-2 {
+    gap: .5rem;
+}
+
+.dash-row-gap {
+    row-gap: 3rem;
 }
