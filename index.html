@@ -15,7 +15,7 @@
         <header class="header flex between align-items">
             <div class="flex align-items header-gap">
                 <img src="./images/icon-menu.png" alt="" width="22" height="25">
-                <div class="header-search flex align-items">
+                <div class="header-search flex align-items border">
                     <img src="./images/icon-search.png" alt="" width="22" height="25">
                     <input type="text" placeholder="Search">
                 </div>
@@ -37,82 +37,82 @@
                 <img src="./images/more.png" alt="" width="18" height="18">
             </div>
         </header>
-        <aside class="sidenav grid">
-            <img src="./images/Logo.png" alt="Logo">
-            <ul class="sidenav-block">
-                <li class="sidenav-item gap-item flex">
+        <aside class="sidenav grid justify-content-start sidenav-color bold">
+            <img class="justify-self-center" src="./images/Logo.png" alt="Logo">           
+            <ul class="sidenav-block border-right">
+                <li class="sidenav-item gap-item flex align-items">
                     <img src="./images/icon-clock.png" alt="" width="22" height="25">
                     <p>Dashboard</p>
                 </li>
-                <li class="sidenav-item gap-item flex">
+                <li class="sidenav-item gap-item flex align-items">
                     <img src="./images/icon-product.png" alt="" width="22" height="25">
                     <p>Products</p>
                 </li>
-                <li class="sidenav-item gap-item flex">
+                <li class="sidenav-item gap-item flex align-items">
                     <img src="./images/icon-fav.png" alt="" width="22" height="25">
                     <p>Favorites</p>
                 </li>
-                <li class="sidenav-item gap-item flex">
+                <li class="sidenav-item gap-item flex align-items">
                     <img src="./images/icon-inbox.png" alt="" width="22" height="25">
                     <p>Inbox</p>
                 </li>
-                <li class="sidenav-item gap-item flex">
+                <li class="sidenav-item gap-item flex align-items">
                     <img src="./images/icon-list.png" alt="" width="22" height="25">
                     <p>Order Lists</p>
                 </li>
-                <li class="sidenav-item gap-item flex">
+                <li class="sidenav-item gap-item flex align-items">
                     <img src="./images/icon-product-stock.png" alt="" width="22" height="25">
                     <p>Product Stock</p>
                 </li>                
             </ul>
 
-            <ul class="sidenav-block">
-                <p>Pages</p>
-                <li class="sidenav-item gap-item flex">
+            <ul class="sidenav-block border border-left-off">
+                <p class="uppercase sidenav-font-size-2">Pages</p>
+                <li class="sidenav-item gap-item flex align-items">
                     <img src="./images/icon-pricing.png" alt="" width="22" height="25">
                     <p>Pricing</p>
                 </li> 
-                <li class="sidenav-item gap-item flex">
+                <li class="sidenav-item gap-item flex align-items">
                     <img src="./images/icon-calender.png" alt="" width="22" height="25">
                     <p>Calender</p>
                 </li> 
-                <li class="sidenav-item gap-item flex">
+                <li class="sidenav-item gap-item flex align-items">
                     <img src="./images/icon-to-do.png" alt="" width="22" height="25">
                     <p>To-Do</p>
                 </li> 
-                <li class="sidenav-item gap-item flex">
+                <li class="sidenav-item gap-item flex align-items">
                     <img src="./images/icon-contact.png" alt="" width="22" height="25">
                     <p>Contact</p>
                 </li> 
-                <li class="sidenav-item gap-item flex">
+                <li class="sidenav-item gap-item flex align-items">
                     <img src="./images/icon-invoice.png" alt="" width="22" height="25">
                     <p>Invoice</p>
                 </li> 
-                <li class="sidenav-item gap-item flex">
+                <li class="sidenav-item gap-item flex align-items">
                     <img src="./images/icon-elements.png" alt="" width="22" height="25">
                     <p>UI Elements</p>
                 </li> 
-                <li class="sidenav-item gap-item flex">
+                <li class="sidenav-item gap-item flex align-items">
                     <img src="./images/icon-team.png" alt="" width="22" height="25">
                     <p>Team</p>
                 </li> 
-                <li class="sidenav-item gap-item flex">
+                <li class="sidenav-item gap-item flex align-items">
                     <img src="./images/icon-table.png" alt="" width="22" height="25">
                     <p>Table</p>
                 </li> 
             </ul>
-            <ul class="sidenav-block">
-                <li class="sidenav-item gap-item flex">
+            <ul class="sidenav-block border-right">
+                <li class="sidenav-item gap-item flex align-items">
                     <img src="./images/icon-setting.png" alt="" width="22" height="25">
                     <p>Settings</p>
                 </li>
-                <li class="sidenav-item gap-item flex">
+                <li class="sidenav-item gap-item flex align-items">
                     <img src="./images/icon-logout.png" alt="" width="22" height="25">
                     <p>Logout</p>
                 </li>
             </ul>
         </aside>
-        <div class="dash grid align-items dash-gap-1">
+        <div class="dash grid align-items dash-gap-1 justify-content-start">
             <h1>Dashboard</h1>
             <ul class="section grid column-01 dash-gap-1">
                 <li class="grid column-02 dash-padding dash-border-radius dash-box-shadow">
@@ -168,7 +168,35 @@
             <section class="section">
                 <img class="dash-box-shadow dash-border-radius" src="./images/graph.png" alt="" width="1138" height="430">
             </section>
-            <section class="section">89</section>
+            <section class="section grid dash-gap-1 dash-padding-2 dash-bg dash-max-width dash-border-radius dash-box-shadow">
+                <div class="dash-title flex between">
+                    <h2>Deals Details</h2>
+                    <select class="header-font-size header-color bold-6" name="language" id="language">
+                        <option value="fev">February</option>
+                        <option value="mar">March</option>
+                        <option value="apr">April</option>
+                    </select>
+                </div>
+                <div class="dash-description grid column-03 dash-padding dash-border-radius bold">
+                    <p>Product Name</p>
+                    <p>Location</p>
+                    <p>Date - Time</p>
+                    <p>Piece</p>
+                    <p>Amount</p>
+                    <p>Status</p>
+                </div>
+                <div class="dash-details grid column-03 align-items dash-padding color-gray">
+                    <div class="flex justify-content-center align-items dash-gap-2">
+                        <img src="./images/icon-apple-watch.png" alt="">
+                        <p class="header-font-size">Apple Watch</p>
+                    </div>
+                    <p>6096 Marjolaine Landing</p>
+                    <p>12.09.2019 - 12.53 PM</p>
+                    <p>423</p>
+                    <p>$34,295</p>
+                    <span class="justify-self-start dash-border-radius">Delivered</span>
+                </div>
+            </section>
         </div>
 
 
