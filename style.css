@@ -13,6 +13,10 @@ li {
     list-style: none;
 }
 
+select {
+    outline: none;
+}
+
 :root {
     --primary-dark-gray: rgba(32,34,36,100%);
     --primary-light-bllue: rgba(72,128,255,100%);
@@ -237,7 +241,7 @@ body {
 }
 
 .dash {
-    background-color: var(--secondary-light-bg);
+    background: linear-gradient(to right, white 10%, var(--secondary-light-bg) 10%);
     grid-area: content-dash;
     margin: 3rem 0 0 3rem;
 }
